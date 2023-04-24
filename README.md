@@ -22,7 +22,7 @@ pip install --upgrade baseten truss
 ```
 import truss
 
-dolly-v2_truss = truss.load("path/to/dolly-v2_truss")
+dolly_v2_truss = truss.load("path/to/dolly_v2_truss")
 ```
 
 4. __Log in to Baseten__: Log in to your Baseten account using your API key (key found [here](https://app.baseten.co/settings/account/api_keys)):
@@ -34,7 +34,7 @@ baseten.login("PASTE_API_KEY_HERE")
 
 5. __Deploy the Dolly-v2 Truss__: Deploy the Dolly-v2 Truss to Baseten with the following command:
 ```
-baseten.deploy(dolly-v2_truss)
+baseten.deploy(dolly_v2_truss, model_name="Dolly-v2", publish=True)
 ```
 
 Once your Truss is deployed, you can start using the Dolly-v2 model through the Baseten platform! Navigate to the Baseten UI to watch the model build and deploy and invoke it via the REST API.
